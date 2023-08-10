@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yurastico.com</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA3D4mKh8SLnA_Jz0jByMX-ZVE4V3ZyVxI",
+      authDomain: "yurastico-963d6.firebaseapp.com",
+      projectId: "yurastico-963d6",
+      storageBucket: "yurastico-963d6.appspot.com",
+      messagingSenderId: "615549746372",
+      appId: "1:615549746372:web:6fa8f7cb9c690d7a901d91",
+      measurementId: "G-TEWML4YFW0"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/eu.jpeg" alt="yurastico" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yurastco.com">@yurastico</h1>
+
+          <p style="display:contents;" class="title">Largaria tudo para brilhar como uma grande gostosa.</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mostrar contatos</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:yuriscunha@icloud.com" class="contact-link">yuriscunha@icloud.com</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Aniversário</p>
+
+              <time datetime="2000-01-24">24 de Janeiro, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localizaçõa</p>
+
+              <address>Gigantesca Volta Redonda, RJ, Brasil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/yurastico/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.twitter.com/yurastico/" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/yurastico/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Inicio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Poxetos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Garoto do Blog</button>
+          </li>
+        </ul>
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+      <article class="about  active" data-page="inicio">
+        <header>
+          <h2 class="h2 article-title">yurastico.com</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            Esta é a primeira versão do yurastico.com, aqui quero compartilhar algumas coisas aleatórias, como músicas,
+            curiosidades e conteúdos técnicos sobre desenvolvimento de software a mercado financeiro.
+          </p>
+          <p>
+            Mas por que um site? Se perdeu em 2007???
+
+            Sim queridão, eu me perdi e 2007! Mas eu sempre quis ter um site, acho maneiro, e sem contar que é muito
+            cult ter um site, ser blogueiro de instagram não tem nem graça no mundo de hoje, ademais falar 'acessa lá o
+            yurastico.com' é bom demais.
+
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Conteúdos</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Investimentos</h4>
+
+                <p class="service-item-text">
+                  A única coisa que você precisa saber é que pra investir direito tu só precisa comprar e não fazer mais
+                  nada.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Java</h4>
+
+                <p class="service-item-text">
+                  Java tem seu valor amigos, eu juro.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Minha ideia é focar nisso ai agora, amanhã já pode ser outra coisa
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Videos</h4>
+
+                <p class="service-item-text">
+                  Tenho planos pra começar a fazer videos pro tutubs instagram e tik tok, mas deixa eu organizar minha
+                  vida primeiro pfvr
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Destaques</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/exclamation.png" alt="exclamation mark" style="padding: 10%;" width="60"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>O site é um template 😱</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Sim pessoal, isso aqui é um template, eu sou péssimo em Desenvolvimetno Front-End (Deixar site
+                    bonitinho para os leigos), e tmabém não tenho pretensão de aprender essa bomba, mas quem sabe eu não
+                    mude de ideia, já mudei de ideia tantas vezes nessa vida.
+                    Então eu roubei um template no Github desse amigão <a style="display: inline;"
+                      href="https://github.com/codewithsadee">aqui.</a> Quem sabe um dia eu não anime e faça o meu
+                    próprio do zero.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img style="padding: 10%;" src="./assets/images/youtube.png" alt="Youtube icon" width="60"
+                    data-testimonials-avatar>
+
+
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Youtube!</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Como aqui estou realizando sonhos, como ter um site, o que me impede de também realizar o sonho de
+                    ser um youtuber de sucesso?
+                    Nada né? Então se <a style="display: inline;" href="https://www.youtube.com/@yurastico">increve
+                      lá!</a>.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/linkedin.png" alt="ícone do Linkedin" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Linkedin</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Acho que o Linkedin é a coisa que eu mais odeio no planeta terra, um dia ainda falarei sobre isso,
+                    mas segue o meu <a style="display: inline;"
+                      href="https://www.linkedin.com/in/yuri-cunha-b7861115a/">ai. (espero que falar isso não espante
+                      convite para poxetos)</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img style="padding: 10%;" src="./assets/images/github.png" alt="Github" width="60"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Github</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Meu <a style="display: inline;" href="https://github.com/yurastico">Github</a> é uma vergonha
+                    amigos, mas prometo que vou começar a usar ele direitinho
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img style="padding: 10%;" src="./assets/images/exclamation.png" alt="exclamation mark" width="80"
+                  data-modal-img>
+              </figure>
+
+
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>exclamation</h4>
+
+
+
+              <div data-modal-text>
+                <p>
+                  content
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+      </article>
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="poxetos">
+
+        <header>
+          <h2 class="h2 article-title">Projetos</h2>
+        </header>
+
+        <section class="projects">
+
+          <h1 class="h2 article-title">Em breve!</h1>
+          <section class="about-text">
+            <p>Aqui vou disponibilizar meus projetos, mas por enquanto vai ser só no <a style="display: inline;"
+                href="https://github.com/yurastico">Github</a> mesmo.</p>
+          </section>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+
+        </section>
+      </article>
+      <!--
+        - #BLOG
+      -->
+      <article class="blog" data-page="garoto do blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+        <section class="blog-posts">
+          <section class="about-text">
+            <h1 class="h2 article-title">Em breve!</h1>
+            <p>Tenho muita vontade de começar a escrever, sobre coisas aleatórias mesmo, sobre um disco de música, um
+              filme, uma tralha tecnológica entre outras coisas.</p>
+            <p>Afinal cagar regra é uma das melhores coisas do planeta.</p>
+            <p>Então logo mais farei um Blog porque a temática aqui é voltar para 2007</p>
+          </section>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
