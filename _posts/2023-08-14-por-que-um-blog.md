@@ -5,7 +5,7 @@ categoria: tech
 cover: post-1-1
 ---
 
-### A resposta curva é porque me deu na telha.
+### A resposta curta é porque me deu na telha.
 
 Já a resposta longa...
 
