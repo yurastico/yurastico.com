@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+
+<figure class="blog-banner-box">
+  {% if page.cover != null and page.cover != "" %}
+  <img src="/assets/img/{{page.cover}}.jpg" alt="Capa">
+  {% else %}
+  <img src="/assets/img/notfound.jpg" alt="Capa">
+  {% endif %}
+</figure>
+
+<div style="padding: 5%;">
+  <p>
+    {{ page.date | date: "%e/%m/%Y" }}
+
+  </p>
+
+  {{ content }}
+</div>

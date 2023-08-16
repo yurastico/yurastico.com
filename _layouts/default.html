@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yurastico.com</title>
+    <!--
+        - favicon
+      -->
+    <link rel="shortcut icon" href="/assets/images/icon.png" type="image/x-icon">
+
+    <!--
+        - custom css link
+      -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!--
+        - google font link
+      -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyA3D4mKh8SLnA_Jz0jByMX-ZVE4V3ZyVxI",
+        authDomain: "yurastico-963d6.firebaseapp.com",
+        projectId: "yurastico-963d6",
+        storageBucket: "yurastico-963d6.appspot.com",
+        messagingSenderId: "615549746372",
+        appId: "1:615549746372:web:6fa8f7cb9c690d7a901d91",
+        measurementId: "G-TEWML4YFW0"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </head>
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="/assets/images/eu.jpeg" alt="yurastico" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yurastco.com">@yurastico</h1>
+
+          <p style="display:contents;" class="title">Largaria tudo para brilhar como uma grande gostosa.</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mostrar contatos</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:yuriscunha@icloud.com" class="contact-link">yuriscunha@icloud.com</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Aniversário</p>
+
+              <time datetime="2000-01-24">24 de Janeiro, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localização</p>
+
+              <address>Gigantesca Volta Redonda, RJ, Brasil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/yurastico/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.twitter.com/yurastico/" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/yurastico/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+    <div class="main-content">
+      {% include navigation.html %}
+      <article class="about active" data-page="inicio">
+        <header>
+          <h2 class="h2 article-title">{{ page.title | capitalize }}</h2>
+        </header>
+        <section class="about-text">
+          {{ content }} 
+        </section>
+      </article>
+    </div>
+    
+  </main>
+  {% include footer.html %}
+
+
+  <script src="/assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+</html>
+

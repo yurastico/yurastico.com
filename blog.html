@@ -1,0 +1,49 @@
+---
+layout: default
+title: Garoto do Blog
+---
+
+
+
+<section class="blog-posts">
+
+  <ul class="blog-posts-list">
+    {% for post in site.posts %}
+    <li class="blog-post-item">
+      <a href="{{ post.url }}">
+
+        <figure class="blog-banner-box">
+          {% if post.cover != null and post.cover != "" %}
+          <img src="/assets/img/{{post.cover}}.jpg" alt="Capa" loading="lazy">
+          {% else %}
+          <img src="/assets/img/notfound.jpg" alt="Capa" loading="lazy">
+          {% endif %}
+
+        </figure>
+
+        <div class="blog-content">
+
+          <div class="blog-meta">
+            <p class="blog-category">Design</p>
+
+            <span class="dot"></span>
+
+            <time datetime="{{ post.date }}">{{ post.date | date: "%e/%m/%Y" }}</time>
+          </div>
+
+          <h3 class="h3 blog-item-title">{{ post.title }}</h3>
+
+          <p class="blog-text">
+            {{ post.excerpt }}
+          </p>
+
+        </div>
+
+      </a>
+    </li>
+    {% endfor %}
+
+
+  </ul>
+
+</section>

@@ -1,0 +1,68 @@
+---
+layout: default
+title: Poxetos
+---
+
+<section class="projects">
+
+  <div class="filter-select-box">
+
+    <button class="filter-select" data-select>
+
+      <div class="select-value" data-selecct-value>Select category</div>
+
+      <div class="select-icon">
+        <ion-icon name="chevron-down"></ion-icon>
+      </div>
+
+    </button>
+
+    <ul class="select-list">
+
+      <li class="select-item">
+        <button data-select-item>All</button>
+      </li>
+
+      <li class="select-item">
+        <button data-select-item>Web design</button>
+      </li>
+
+      <li class="select-item">
+        <button data-select-item>Applications</button>
+      </li>
+
+      <li class="select-item">
+        <button data-select-item>Web development</button>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <ul class="project-list">
+    {% for projeto in site.projetos %}
+    <li class="project-item  active" data-filter-item data-category="web development">
+      <a href="{{projeto.url}}">
+
+        <figure class="blog-banner-box">
+          {% if projeto.cover != null and projeto.cover != "" %}
+          <img src="/assets/projetos/{{projeto.cover}}" alt="Capa" loading="lazy">
+          {% else %}
+          <img src="/assets/img/notfound.jpg" alt="Capa" loading="lazy">
+          {% endif %}
+
+        </figure>
+
+
+        <h3 class="project-title">{{ projeto.title }}</h3>
+
+        <p class="project-category">{{ projeto.subtitle }} </p>
+
+      </a>
+    </li>
+    {% endfor %}
+
+
+  </ul>
+
+</section>

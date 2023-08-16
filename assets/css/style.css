@@ -14,6 +14,10 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+ul {
+  list-style-type: none;
+}
+
 
 :root {
 
@@ -126,8 +130,9 @@
 }
 
 a { text-decoration: none; }
+a {  color:hsl(35, 100%, 68%) }
 
-li { list-style: none; }
+
 
 img, ion-icon, a, button, time, span { display: block; }
 
@@ -225,7 +230,7 @@ article.active {
 .h4,
 .h5 {
   color: var(--white-2);
-  text-transform: capitalize;
+  
 }
 
 .h2 { font-size: var(--fs-1); }
@@ -1090,6 +1095,7 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  margin-bottom: 10px;
 }
 
 .blog-meta .dot {
@@ -1097,6 +1103,7 @@ main {
   width: 4px;
   height: 4px;
   border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 .blog-item-title {
@@ -1879,4 +1886,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;        
+      /* altura do rodapé */
 }
