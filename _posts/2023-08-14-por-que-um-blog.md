@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Por que um blog?
-categoria: tech
+category: tech
 cover: post-1-1
 ---
 
